@@ -3,8 +3,8 @@ const activeItem = document.querySelector(".link-item");
 
 listActive.forEach((item) => {
   console.log(item);
-  item.addEventListener("click", (target) => {
-    console.log("Active item", target.target);
+  item.addEventListener("click", (e) => {
+    console.log("Active item", e.target);
     listActive.forEach((active) => {
       active.classList.remove("active");
     });
