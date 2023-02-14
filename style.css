@@ -92,14 +92,13 @@ p {
 }
 
 /* This will remain active or selected whenever it is clicked. */
-#navbar li a:hover,
-#navbar li a.active {
+#navbar li .link-item:hover,
+#navbar li .link-item.active {
   color: rgb(23, 22, 23);
 }
 
 /* Using pseudo-code this will create the line under the list items.  */
-#navbar li a.active::after,
-#navbar li a:hover::after {
+.active {
   content: "";
   width: 55%;
   height: 3px;
